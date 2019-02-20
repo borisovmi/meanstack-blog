@@ -1,0 +1,9 @@
+<h1>Posts Page</h1>
+
+<p><a href="" routerLink="/posts/add">Add post</a></p>
+
+<div *ngFor="let post of posts">
+  <h4>{{post.title}}</h4>
+  <p>{{post.article}}</p>
+  <p><b>Post by: </b> {{post.postBy.name}}</p>
+</div>

@@ -1,0 +1,10 @@
+<h1>Add Post Form</h1>
+<form #addPost="ngForm" (ngSubmit)="onSubmit(addPost)" action="" method="POST" autocomplete="off"
+  novalidate="novalidate">
+  <label for="title">Title</label><br>
+  <input type="text" name="title" id="title" [(ngModel)]="title"><br><br>
+  <label for="article">Article</label><br>
+  <textarea type="text" name="article" id="article" [(ngModel)]="article" cols="30" rows="10"></textarea><br><br>
+  <input type="submit" value="Save Post" name="submit">
+  <span style="color: red" *ngIf="errorMessage"> {{ errorMessage }}</span>
+</form>
